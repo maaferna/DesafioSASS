@@ -1,0 +1,15 @@
+// Import todos los partials files
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'base/reset';
+@import 'base/typography';
+@import 'components/buttons';
+@import 'components/cards';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'pages/home';
+@import 'pages/about';
+@import 'themes/theme';
+@import 'vendors/bootstrap';
