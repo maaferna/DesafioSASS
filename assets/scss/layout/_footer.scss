@@ -1,0 +1,29 @@
+@import '../abstracts/mixins';
+
+.footer {
+    background-color: #fff;
+    padding: 40px;
+    @include flex-center(space-between);
+    border-top: 1px solid $border-radius-color;
+  
+    &__left, &__right {
+      @include flex-center();
+    }
+    
+    &__logo {
+      height: 50px;
+      margin-right: 20px;
+    }
+    
+    &__title, &__text {
+      font-size: 1.5rem;
+      margin: 0;
+      color: $text-customized-color;
+    }
+  }
+
+  @media (max-width: 982px) {
+    .footer {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,71 @@
+@import '../abstracts/mixins';
+
+.card--featured, .small-card {
+  @include border-radius(8px);
+  @include box-shadow(0, 4px, 6px, rgba(0, 0, 0, 0.1));
+}
+
+.card--featured {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  &__image {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+
+  &__content {
+    padding: 15px;
+  }
+}
+
+.small-card {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+
+  &__image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image img {
+    width: auto;
+    height: 100px;
+  }
+
+  &__content {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+  }
+}
+
+
+@media (max-width: 982px) {
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .small-card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .small-card__image {
+        grid-column: 1 / span 6;
+    }
+
+    .small-card__content {
+        grid-column: 7 / span 6;
+    }
+}
+

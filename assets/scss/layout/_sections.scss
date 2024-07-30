@@ -1,0 +1,21 @@
+.section {
+    background-color: $background-primary-color;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid $border-radius-color;
+}
+
+@media (max-width: 982px) {
+    .section {
+        padding: 10px;
+    }
+
+    .section--split {
+        flex-direction: column;
+    }
+
+    .section__populares, .section__categorias {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,26 @@
+// components/_header.scss
+
+@import '../abstracts/mixins';
+
+.header {
+  background-color: #fff;
+  padding: 40px;
+  @include flex-center(left);
+  border-bottom: 1px solid $border-radius-color;
+  
+  &__logo {
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  &__title {
+    font-size: 2rem;
+    margin: 0;
+  }
+}
+
+@media (max-width: 982px) {
+    .header__title {
+        font-size: 1.5rem;
+    }
+}
