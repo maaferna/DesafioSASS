@@ -1,4 +1,4 @@
-.card--featured, .small-card {
+.card--featured, .card--small {
   border-radius: 8px;
   @include box-shadow(0, 4px, 6px, rgba(0, 0, 0, 0.1));
 }
@@ -10,8 +10,8 @@
   margin-bottom: 20px;
 
   &__image {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     max-height: 100%;
   }
 
@@ -37,7 +37,7 @@
     align-items: center;
 
     &-logo {
-      height: 20px;
+      height: 2rem;
       margin-right: 5px;
       border-radius: 50%; // Optional: if you want to make the logo round
     }
@@ -50,8 +50,7 @@
   }
 }
 
-
-.small-card {
+.card--small {
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -63,9 +62,9 @@
     align-items: center;
     justify-content: center;
 
-    img {
+    &-img {
       width: auto;
-      height: 100px;
+      height: 10rem;
       border-radius: 10px;
     }
   }
@@ -77,6 +76,35 @@
     justify-content: center;
     padding: 15px;
   }
+
+  &__date {
+    font-size: 0.875rem;
+    color: #999;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: #292C33;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+
+    &-logo {
+      height: 2rem;
+      margin-right: 5px;
+    }
+
+    p {
+      font-size: 0.875rem;
+      color: #67C770;
+      margin: 0;
+    }
+  }
 }
 
 @media (max-width: 982px) {
@@ -84,7 +112,7 @@
     margin-bottom: 10px;
   }
 
-  .small-card {
+  .card--small {
     flex-direction: column;
     height: auto;
 
@@ -97,4 +125,3 @@
     }
   }
 }
-
