@@ -1,7 +1,5 @@
-@import '../abstracts/mixins';
-
 .card--featured, .small-card {
-  @include border-radius(8px);
+  border-radius: 8px;
   @include box-shadow(0, 4px, 6px, rgba(0, 0, 0, 0.1));
 }
 
@@ -20,7 +18,38 @@
   &__content {
     padding: 15px;
   }
+
+  &__date {
+    font-size: 0.875rem;
+    color: #999;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: #292C33;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+
+    &-logo {
+      height: 20px;
+      margin-right: 5px;
+      border-radius: 50%; // Optional: if you want to make the logo round
+    }
+
+    p {
+      font-size: 0.875rem;
+      color: #67C770;
+      margin: 0;
+    }
+  }
 }
+
 
 .small-card {
   display: flex;
@@ -33,11 +62,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
 
-  &__image img {
-    width: auto;
-    height: 100px;
+    img {
+      width: auto;
+      height: 100px;
+      border-radius: 10px;
+    }
   }
 
   &__content {
@@ -49,23 +79,22 @@
   }
 }
 
-
 @media (max-width: 982px) {
-    .card {
-        margin-bottom: 10px;
+  .card {
+    margin-bottom: 10px;
+  }
+
+  .small-card {
+    flex-direction: column;
+    height: auto;
+
+    &__image {
+      grid-column: 1 / span 6;
     }
 
-    .small-card {
-        flex-direction: column;
-        height: auto;
+    &__content {
+      grid-column: 7 / span 6;
     }
-
-    .small-card__image {
-        grid-column: 1 / span 6;
-    }
-
-    .small-card__content {
-        grid-column: 7 / span 6;
-    }
+  }
 }
 
