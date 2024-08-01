@@ -1,0 +1,59 @@
+.section__populares {
+    grid-column: span 8;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  
+    @media (max-width: 942px) {
+      grid-column: span 12;
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .section__categorias {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+  
+    @media (max-width: 942px) {
+      grid-column: span 12;
+    }
+  
+    .card {
+      display: flex;
+      align-items: center;
+  
+      &.bg-red { background-color: #E93E30; }
+      &.bg-yellow { background-color: #F7E018; }
+      &.bg-blue { background-color: #299ED5; }
+      &.bg-dark { background-color: #292C33; }
+      &.bg-green { background-color: #67C770; }
+      &.bg-purple { background-color: #563D7C; }
+  
+      .small-card {
+        display: flex;
+        align-items: center;
+        width: 100%;
+  
+        &__image {
+          flex: 1;
+          img {
+            width: auto;
+            height: 50px;
+          }
+        }
+  
+        &__content {
+          flex: 2;
+  
+          h4 {
+            color: #fff;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  
