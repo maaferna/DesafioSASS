@@ -1,0 +1,24 @@
+.button {
+    display: inline-block;
+    padding: $spacing-small $spacing-medium;
+    font-size: $font-size-medium;
+    color: #fff;
+    background-color: $primary-color;
+    border: none;
+    @include border-radius();
+    text-align: center;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  
+    &--secondary {
+      background-color: $secondary-color;
+  
+      &:hover {
+        background-color: darken($secondary-color, 10%);
+      }
+    }
+  }
+  

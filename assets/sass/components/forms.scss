@@ -1,0 +1,14 @@
+input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: $spacing-small;
+    font-size: $font-size-medium;
+    border: 1px solid $muted-text-color;
+    @include border-radius();
+  
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+  }
+  

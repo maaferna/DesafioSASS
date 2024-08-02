@@ -5,6 +5,52 @@ body {
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #292C33;
+  margin: 0 0 15px;
+}
+
+p {
+  margin: 0 0 15px;
+  color: #999;
+}
+
+a {
+  color: #67C770;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #67C770;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #44b74e;
+}
+.button--secondary {
+  background-color: #299ED5;
+}
+.button--secondary:hover {
+  background-color: #217eaa;
+}
+
 .card {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

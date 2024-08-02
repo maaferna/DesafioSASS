@@ -15,15 +15,16 @@
   }
 
 // Mixin for border-radius
-@mixin border-radius($radius) {
-    border-radius: $radius;
-  }
-  
-  // Mixin for box-shadow
-  @mixin box-shadow($x, $y, $blur, $color) {
-    box-shadow: $x $y $blur $color;
-  }
-  
+// Box Shadow
+@mixin box-shadow($x: 0, $y: 4px, $blur: 6px, $color: rgba(0, 0, 0, 0.1)) {
+  box-shadow: $x $y $blur $color;
+}
+
+// Border Radius
+@mixin border-radius($radius: 8px) {
+  border-radius: $radius;
+}
+
 
   // Mixin for flex alignment
 @mixin flex-center($justify: center, $align: center) {

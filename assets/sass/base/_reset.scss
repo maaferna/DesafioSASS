@@ -1,0 +1,28 @@
+@import '../themes/theme';
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: $background-color-body;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: $text-color;
+    margin: 0 0 $spacing-medium;
+  }
+  
+  p {
+    margin: 0 0 $spacing-medium;
+    color: $muted-text-color;
+  }
+  
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
