@@ -1,0 +1,72 @@
+.registration {
+    padding: $spacing-large;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 90vh;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+
+    &__title {
+        font-size: $font-size-large;
+        margin-bottom: $spacing-large;
+        color: $text-color;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__input {
+            padding: $spacing-small;
+            margin-bottom: $spacing-small;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%; 
+        }
+
+        &__button {
+            padding: $spacing-small;
+            background-color: $primary-color;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken($primary-color, 10%);
+            }
+        }
+
+        &__google-button {
+            padding: $spacing-small;
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: $spacing-medium;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $background-color-body;
+            }
+        }
+    }
+
+    &__login-link {
+        margin-top: $spacing-large;
+        font-size: $font-size-small;
+        color: $muted-text-color;
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

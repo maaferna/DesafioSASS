@@ -1,0 +1,41 @@
+
+.subscription {
+    padding: $spacing-large;
+    background-color: $primary-color;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+
+    &__title {
+        font-size: $font-size-title;
+        margin-bottom: $spacing-medium;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__input {
+            padding: $spacing-small;
+            border: none;
+            border-radius: 4px;
+            margin-right: $spacing-small;
+            width: 300px;
+        }
+
+        &__button {
+            padding: $spacing-small $spacing-large;
+            background-color: #fff;
+            color: $primary-color;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $accent-color;
+                color: #fff;
+            }
+        }
+    }
+}

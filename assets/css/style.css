@@ -3,6 +3,9 @@ body {
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -335,6 +338,11 @@ body {
   }
 }
 .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
   background-color: #fff;
   padding: 40px;
   display: flex;
@@ -353,13 +361,19 @@ body {
 }
 .footer__title, .footer__text {
   font-size: 1.5rem;
-  margin: 0;
+  margin-right: 50px;
   color: #000;
+}
+.footer__right {
+  margin-left: 50px;
 }
 
 @media (max-width: 982px) {
   .footer {
     padding: 5px;
+  }
+  .footer__right {
+    margin-left: 10px;
   }
 }
 .grid-container {
@@ -481,6 +495,18 @@ body {
     margin-bottom: 20px;
   }
 }
+.main-content {
+  flex: 1;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
 .section {
   background-color: #fff;
   padding: 20px;
@@ -548,6 +574,105 @@ body {
   text-align: center;
   color: #299ED5;
   font-weight: 500;
+}
+
+.registration {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 90vh;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+.registration__title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #292C33;
+}
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.registration__form__input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+.registration__form__button {
+  padding: 10px;
+  background-color: #67C770;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.registration__form__button:hover {
+  background-color: #44b74e;
+}
+.registration__form__google-button {
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.registration__form__google-button:hover {
+  background-color: #f0f0f0;
+}
+.registration__login-link {
+  margin-top: 20px;
+  font-size: 0.875rem;
+  color: #999;
+}
+.registration__login-link a {
+  color: #67C770;
+  text-decoration: none;
+}
+.registration__login-link a:hover {
+  text-decoration: underline;
+}
+
+.subscription {
+  padding: 20px;
+  background-color: #67C770;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+}
+.subscription__title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.subscription__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscription__form__input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 300px;
+}
+.subscription__form__button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #67C770;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.subscription__form__button:hover {
+  background-color: #F7E018;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

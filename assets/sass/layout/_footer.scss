@@ -1,6 +1,11 @@
 @import '../abstracts/mixins';
 
 .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
     background-color: #fff;
     padding: 40px;
     @include flex-center(space-between);
@@ -17,8 +22,12 @@
     
     &__title, &__text {
       font-size: 1.5rem;
-      margin: 0;
+      margin-right: 50px;
       color: $text-customized-color;
+    }
+
+    &__right {
+      margin-left: 50px; // Ajusta este valor según sea necesario
     }
   }
 
@@ -26,4 +35,7 @@
     .footer {
         padding: 5px;
     }
+    .footer__right {
+      margin-left: 10px; // Ajusta este valor para pantallas pequeñas si es necesario
+  }
 }
