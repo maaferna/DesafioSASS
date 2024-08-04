@@ -75,7 +75,7 @@
     }
 }
 
-.card {
+.related-posts__list .card {
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
@@ -95,8 +95,8 @@
     }
 
     &__image {
-        width: auto;
-        height: 400px; // Ajustar la altura de las imágenes
+        width: 100%;
+        height: 50%; // Ajustar la altura de las imágenes para que sean uniformes
         object-fit: cover; // Ajustar la imagen para que cubra el contenedor manteniendo la proporción
     }
 
